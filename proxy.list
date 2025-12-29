@@ -8,6 +8,7 @@ DOMAIN-KEYWORD,1e100
 
 DOMAIN-SUFFIX,ckpool.org
 DOMAIN-SUFFIX,public-pool.io
+DST-PORT,3333
 
 # 国外DNS
 DOMAIN-SUFFIX,dns.google
