@@ -11,12 +11,12 @@ DEBIAN_FRONTEND=noninteractive apt-get install -y wget ca-certificates tar
 cd /workspace
 wget -c https://github.com/pearlfortune/pearl-miner/releases/download/v1.1.8/pearlfortune-v1.1.8.tar.gz
 tar vxzf pearlfortune-v1.1.8.tar.gz
+
 cd pearlfortune
 chmod +x miner-cuda12
 
-nohup ./miner-cuda12 \
+./miner-cuda12 \
   --proxy "${PRL_PROXY}" \
   --address "${PRL_ADDRESS}" \
   --worker "${PRL_WORKER}" \
-  -gpu \
-  > /workspace/pearl-miner.log 2>&1 &
+  -gpu
